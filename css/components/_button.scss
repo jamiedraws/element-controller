@@ -1,0 +1,13 @@
+$select: ".button" !default;
+
+// abstracts
+@use "Shared/scss/templates/base/abstracts/button";
+
+@mixin base {
+    #{$select} {
+        @include button.capsule {
+        }
+
+        @content;
+    }
+}

@@ -1,0 +1,27 @@
+// utils
+@use "Shared/scss/templates/base/utils/view";
+@use "Shared/scss/templates/base/utils/section";
+@use "./../utils/element-controller";
+
+// components
+@use "./../components/button";
+
+// layouts
+@use "Shared/scss/templates/base/layouts/document";
+@use "./../layouts/picture-view";
+
+@mixin page {
+    // utils
+    @include view.base {
+    }
+    @include section.base {
+    }
+    @include element-controller.base;
+
+    // components
+    @include button.base;
+
+    // layouts
+    @include document.base;
+    @include picture-view.base;
+}

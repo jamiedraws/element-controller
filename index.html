@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Element Controller</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <script defer src="./js/app.es5.js"></script>
 </head>
 <body>
-    
+    <main class="view picture-view element-controller" aria-live="polite">
+        <div class="view__in picture-view__group">
+            <picture id="element-1" class="element-controller__element">
+                <source srcset="./images/slide-1.webp" type="image/webp">
+                <img src="./images/slide-1.jpg" alt="" width="1100" height="619">
+            </picture>
+            <picture id="element-2" class="element-controller__element">
+                <source srcset="./images/slide-2.webp" type="image/webp">
+                <img src="./images/slide-2.jpg" alt="" width="1100" height="619">
+            </picture>
+            <picture id="element-3" class="element-controller__element">
+                <source srcset="./images/slide-3.webp" type="image/webp">
+                <img src="./images/slide-3.jpg" alt="" width="1100" height="619">
+            </picture>
+            <picture id="element-4" class="element-controller__element">
+                <source srcset="./images/slide-4.webp" type="image/webp">
+                <img src="./images/slide-4.jpg" alt="" width="1100" height="619">
+            </picture>
+            <button type="button" id="button-1" aria-controls="element-1 element-2" aria-expanded="true" class="element-controller__controller">
+                <span>First 2 Pictures</span>
+            </button>
+            <button type="button" id="button-2" aria-controls="element-3 element-4" class="element-controller__controller">
+                <span>Last 2 Pictures</span>
+            </button>
+        </div>
+    </main>
 </body>
 </html>

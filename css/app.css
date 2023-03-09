@@ -1,0 +1,322 @@
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!../node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./css/app.scss ***!
+  \************************************************************************************************************************************************************************************************************/
+@supports (position: sticky) {
+  .view__anchor {
+    top: calc(6rem * -1);
+  }
+}
+@media all and (max-width: 1000px) {
+  .view__anchor {
+    top: calc(6rem * -1);
+  }
+}
+@supports (position: sticky) {
+  .view__scroll {
+    top: calc(6rem * -1);
+  }
+}
+@media all and (max-width: 1000px) {
+  .view__scroll {
+    top: calc(6rem * -1);
+  }
+}
+.view::after {
+  top: calc(30vh - 6rem);
+}
+@media all and (max-width: 1000px) {
+  .view::after {
+    top: calc(30vh - 6rem);
+  }
+}
+
+.view {
+  position: relative;
+}
+.view__anchor {
+  position: absolute;
+}
+.view__in {
+  position: relative;
+}
+.view__scroll {
+  position: sticky;
+}
+
+.section {
+  margin: 0;
+}
+.section__contain {
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: content-box;
+}
+.section__in {
+  max-width: 1000px;
+  margin: auto;
+  box-sizing: content-box;
+  padding: 2rem;
+}
+.section__block {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.element-controller__element:not([data-element-controller-name]) {
+  display: none;
+}
+
+.button {
+  color: white;
+  text-shadow: 0em 0.1em 0.2em hsla(0deg, 0%, 0%, 0.5);
+}
+.button::before, .button::after, .button > span::before, .button > span::after {
+  border-radius: 3em;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+@supports (display: flex) {
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}
+body > footer {
+  flex: 1;
+}
+
+main {
+  display: block;
+  flex: 1;
+}
+
+a:focus,
+button:focus,
+label:focus {
+  outline: 2px solid currentColor;
+}
+
+:link,
+:visited {
+  text-decoration: underline;
+  color: inherit;
+  word-break: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  word-break: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+img,
+iframe,
+picture,
+figure {
+  display: block;
+}
+
+iframe,
+img {
+  border: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+sup,
+sub {
+  font-size: 50%;
+  line-height: 0;
+  position: relative;
+  margin: 0 0.25em;
+}
+
+sup {
+  bottom: 0.33em;
+}
+
+sub {
+  bottom: -0.33em;
+}
+
+button,
+input,
+select {
+  background: none;
+  border: 0;
+  font-size: 16px;
+  border-radius: 0;
+  box-shadow: none;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+@supports (font-size: max(16px, 1rem)) {
+  button,
+  input,
+  select {
+    font-size: max(16px, 1rem);
+  }
+}
+button:not([type=checkbox]):not([type=radio]),
+input:not([type=checkbox]):not([type=radio]),
+select:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+input {
+  line-height: inherit;
+}
+
+a[href^="mailto:"] {
+  word-break: break-all;
+}
+
+[hidden] {
+  display: none;
+}
+
+.picture-view {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 106.25em;
+}
+.picture-view picture {
+  max-width: 68.75em;
+}
+.picture-view button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  z-index: 1;
+  font: bold 1.75rem/1 sans-serif;
+  word-break: break-word;
+  padding: 0.75em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 4px solid rgb(52, 50, 52);
+  font-size: 1.25em;
+}
+.picture-view button > span {
+  pointer-events: none;
+}
+.picture-view button::before, .picture-view button::after, .picture-view button > span::before, .picture-view button > span::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.picture-view button::after, .picture-view button:hover > span::after {
+  opacity: 0;
+}
+.picture-view button::after, .picture-view button > span::after {
+  transition: opacity 200ms ease-out;
+}
+.picture-view button:hover::after, .picture-view button:focus::after {
+  opacity: 1;
+}
+.picture-view button:hover, .picture-view button:focus {
+  background: none;
+}
+.picture-view button[tabindex="-1"] {
+  visibility: hidden;
+}
+.picture-view button::before {
+  background: rgb(52, 50, 52);
+}
+.picture-view button::after {
+  background: rgb(140, 140, 143);
+}
+.picture-view button[aria-expanded=true] {
+  color: rgb(52, 50, 52);
+}
+.picture-view button[aria-expanded=true]::after {
+  background: rgb(203, 199, 203);
+  opacity: 1;
+}
+.picture-view__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  margin: -0.5rem;
+  margin: 0.5rem;
+  justify-content: center;
+}
+.picture-view__group > * {
+  flex: 0 1 auto;
+  flex-basis: calc(50% - (0.5rem * 2));
+}
+.picture-view__group > * {
+  margin: 0.5rem;
+}
+@media all and (max-width: 68.75rem) {
+  .picture-view picture {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=app.css.map*/

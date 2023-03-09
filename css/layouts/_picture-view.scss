@@ -1,0 +1,69 @@
+$select: ".picture-view" !default;
+
+// config
+@use "Shared/scss/templates/base/config/units";
+
+// abstracts
+@use "Shared/scss/templates/base/abstracts/button";
+@use "Shared/scss/templates/base/abstracts/group";
+
+@mixin base {
+    #{$select} {
+        display: flex;
+        align-items: center;
+
+        margin: auto;
+        max-width: units.em(1700);
+
+        picture {
+            max-width: units.em(1100);
+        }
+
+        button {
+            @include button.structure {
+            }
+
+            @include button.container {
+                border: 4px solid rgb(52, 50, 52);
+
+                &::before {
+                    background: rgb(52, 50, 52);
+                }
+
+                &::after {
+                    background: rgb(140, 140, 143);
+                }
+            }
+
+            font-size: units.em(20);
+
+            &[aria-expanded="true"] {
+                color: rgb(52, 50, 52);
+
+                &::after {
+                    background: rgb(203, 199, 203);
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__group {
+            $gutter: 0.5rem;
+
+            @include group.contain($gutter: 0.5rem) {
+                flex-basis: calc((100% / 2) - (#{$gutter} * 2));
+            }
+            margin: #{$gutter};
+
+            justify-content: center;
+        }
+
+        @media all and (max-width: units.set(1100)) {
+            picture {
+                flex-basis: 100%;
+            }
+        }
+
+        @content;
+    }
+}
